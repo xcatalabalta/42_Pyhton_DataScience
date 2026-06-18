@@ -10,7 +10,6 @@ def all_thing_is_obj(object: any) -> int:
 		print ("Type not found")
 	return 42
 
-
 '''
 # main starts here
 
@@ -20,7 +19,7 @@ ft_set = {"Hello", "tutu!"}
 ft_dict = {"Hello": "titi!"}
 #print (known)
 all_thing_is_obj(ft_list)
-
+print(all_thing_is_obj(ft_list))
 all_thing_is_obj(ft_tuple)
 all_thing_is_obj(ft_set)
 all_thing_is_obj(ft_dict)
