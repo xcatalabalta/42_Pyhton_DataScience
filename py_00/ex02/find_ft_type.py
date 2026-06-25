@@ -1,14 +1,15 @@
 def all_thing_is_obj(object: any) -> int:
-	known = [type([]).__name__ , type(()).__name__ , type({}).__name__ , type(set()).__name__]
-	obj = type(object)
-	name = type(object).__name__
-	if name in known:
-		print (f"{name.capitalize()} : {obj}")
-	elif (object.__class__.__name__ == 'str'):
-		print (f"{object} is in the kitchen : {obj}")
-	else:
-		print ("Type not found")
-	return 42
+    known = [type([]).__name__, type(()).__name__, type({}).__name__, type(set()).__name__]
+    obj = type(object)
+    name = type(object).__name__
+    if name in known:
+        print(f"{name.capitalize()} : {obj}")
+    elif (object.__class__.__name__ == 'str'):
+        print(f"{object} is in the kitchen : {obj}")
+    else:
+        print("Type not found")
+    return 42
+
 
 '''
 # main starts here

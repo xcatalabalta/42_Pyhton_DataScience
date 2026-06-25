@@ -14,10 +14,11 @@ def NULL_not_found(object: any) -> int:
         return 1
     print(f"{name}: {object} {type(object)}")
     return 0
-        
-""" 
-#original function    
-	if object is None:
+
+
+"""
+#original function
+    if object is None:
         print(f"Nothing: {object} <class 'NoneType'>")
         return 0
     elif object is False:
@@ -36,7 +37,8 @@ def NULL_not_found(object: any) -> int:
         print("Type not Found")
     return 1 """
 
-#Uncomment below to run as main
+# Un/comment below to run as main or not
+"""
 if __name__ == '__main__':
     Nothing = None
     Garlic = float("NaN")
@@ -54,3 +56,4 @@ if __name__ == '__main__':
     print(NULL_not_found("Brian"))
     print(NULL_not_found(Fake))
     print(NULL_not_found(num))
+ """
